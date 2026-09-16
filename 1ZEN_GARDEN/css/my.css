@@ -1,0 +1,85 @@
+/* Author: Abdou Sylla
+Create Date: 23 dec, 2022 */
+body {
+    background-color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.4em;
+    font-size: 120%;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 120%;
+}
+.unlist {
+    font-weight: bolder;
+    font-size: 110%;
+}
+/* #fainting, #microsoft, #mimic{
+    font-size: 110%;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.8em;
+    
+} */
+img {
+margin-left: 200px;
+}
+
+                                /* Requirement 4. Style all <a> tags using pseudo-classes for normal, hover, and visited states.*/
+
+a:link /* unvisited link  */ {
+    color: red;
+    cursor: pointer;
+
+}
+a:hover /* mouse on the link  */ {
+    color: blue;
+
+}
+a:visited /* link already visited  */{
+    color: red;
+
+}
+a:active /* moment clicked */ 
+{
+    color: white;
+
+}
+table{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px ;
+}
+#content h2{
+    font-size: 110%;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.8em;
+}
+li a {
+    margin: 20px;
+}
+.table_rows{
+    border-color: white;
+    border-style: dashed;
+    border-width: 1px;
+    padding: 10px ;
+    margin: 20px;
+    /* margin-bottom:; */
+}
+/* .table_data{
+ border-color: white;
+border-width: 1px;
+border-style: dotted;
+padding: 10px;
+margin: 20px;
+} */
+.table_data p {
+    color: blue;
+    line-break: new;
+}

@@ -1,0 +1,113 @@
+
+/* EXTRA CREDIT */
+
+@font-face {
+    font-family: Squids;
+    src: url(../fonts/Game\ Of\ Squids.otf);
+    src: url(../fonts/Game\ Of\ Squids.ttf);
+}
+/* new font fomily */ 
+h1{
+    font-family: Squids, sans-serif;
+} 
+
+/* text shadow */
+.shadow{
+    text-shadow: 4px 2px 4px #12aa55;
+}
+
+svg{
+    height: 150px;
+    width: 350px;
+    font-family: Squids;
+    stroke: #115511;
+}
+text{
+    font-size: 20px;
+}
+
+
+
+
+/* ----------(Lab Instructions)-----------------*/
+
+ body { /* Requirement 1.font family of the body element */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+body {      /* Requirement 2.Background Color of the body element */
+        background-color:#dab654;
+    }
+
+body { /* Requirement 3. color of the body element using a hex code*/
+        color:#115511;
+    }
+
+body {/* Requirement 4.font size of the body element using pixel*/
+        font-size: 18px;
+    }
+
+    
+.green, .green p{ /* Requirement 5.Create 4 different style classes/ style 4 dfr <p> elements with four unique colors. */
+        color:#008000;
+    }
+.lightblue, .lightblue p {
+        color: #2ebbe7;
+        
+    }
+.blue, .blue p{
+        color:#8888de;
+        
+    }
+.red, [p] {
+        color:#8b0000;
+    }
+
+#green{  /* Requirement 6. Create a style id, used to change color of h1 in elixir file */
+        color:green;
+    }
+ #lightblue{
+       color: rgb(46, 187, 231);   
+    }
+#blue{
+        color:rgb(136, 136, 222);  
+    }
+#red{
+        color:darkred;
+    }
+
+h1, h2 {     /* Requirement 7. Create a CSS rule that applies to more than one element */
+    color: black; 
+    }
+
+h2 { /* Requirement 8. Create a CSS rule that overrides an inherited style. */
+    font-size: 28px;
+    }
+
+h1 { /* Requirement 9. Set the font size for something besides <body> using a method other than pixels */
+        font-size: 2.4em;
+        text-align: center;
+    }
+
+h1 {  /* Requirement 10. Create a CSS rule defining the bottom border for <h1> to be black, one pixel thick, and solid. */
+
+        border-bottom: 1px solid black;
+        }
+
+h2 {   /* Requirement 11. Besides the rule above, define a color by name. */
+
+        border-bottom: 1px solid white;
+        }
+
+p em {     /* Requirement 12. Create a CSS rule for font weight, text decoration, or font style.*/
+
+        text-decoration: underline;
+    }
+h1 {         
+        font-style: italic ;
+    }
+h1{
+        font-weight: bold;           
+    }
+
+
+
