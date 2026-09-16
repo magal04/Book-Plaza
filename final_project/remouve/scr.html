@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookPlaza</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Link to Slick carousel plugin -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <style>
+        /* Optional: Add custom styles for the carousel */
+        .slick-prev, .slick-next {
+            background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            border-radius: 50%; /* Circular shape */
+            width: 70px; /* Width of the arrow */
+            height: 40px; /* Height of the arrow */
+            top: calc(50% - 20px); /* Center vertically */
+            transform: translateY(-50%); /* Adjust vertical alignment */
+            position: absolute;
+            text-align:center;
+        }
+
+        .slick-prev {/*Position the previous arrow */
+            left: 0px;
+            color:green;
+            font-weight: bold;
+        }
+
+        .slick-next {
+            /* right: 10px; Position the next arrow */
+            right: 10px;
+            font-weight: bold;
+            color:green;
+
+
+        }
+
+        .slick-prev:before, .slick-next:before {
+            font-size: 24px; /* Adjust the arrow size */
+            color: black; /* Arrow color */
+
+        }
+        img{
+            /* display: block; */
+            margin-right: auto;
+            margin-left: auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Welcome to BookPlaza</h1>
+
+    <!-- Carousel container -->
+    <div class="carousel">
+        <div><img src="./logo.png" alt="Book 1"></div>
+        <div><img src="./logo.png" alt="Book 1"></div>
+        <div><img src="./logo.png" alt="Book 1"></div>
+        <div><img src="./logo.png" alt="Book 1"></div>
+        <div><img src="./logo.gif" alt="Book 1"></div>
+        <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Additional content and features of BookPlaza can go here -->
+
+    <!-- Link to your JavaScript file -->
+    <script>
+        $(document).ready(function(){
+            // Initialize the Slick carousel
+            $('.carousel').slick({
+                // dots: true, // Add navigation dots
+                arrows: true, // Add navigation arrows
+                autoplay: true, // Enable autoplay
+                autoplaySpeed: 3000, // Set autoplay speed in milliseconds
+                // Add other options as needed
+            });
+        });
+    </script>
+</body>
+</html>
