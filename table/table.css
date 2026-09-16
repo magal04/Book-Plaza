@@ -1,0 +1,96 @@
+
+/*
+ Filename: table.css
+ Author: Abdou Sylla
+ Purpose: Style for my weekly schedule table.
+ Modification History: 
+ 08 Apr 2024: Create Date
+*/
+body {
+    background-color: #dab654;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* table */
+table {
+    border:  2px solid black; 
+    background-color: #bf941e;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    caption-side: top;
+
+}
+/* Styles for table header and table data */
+th,td {
+    border: 1px solid ;
+    border-spacing: 1.6em;
+    padding: 20px;
+}
+
+/* Styles for table header */
+th {
+    font-weight: bold;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Change caption font style and padding */
+caption {
+    padding-bottom: 10px;
+    font-style: italic;
+}
+/*Change bacgroung color of the table header */
+th{
+    background-color: #4f9334;
+}
+
+ /* class to change background color for assigmnets */
+.assignment {
+background-color: #ffc37f;
+}
+
+ /* class to change background color of thr list*/
+.hangout {
+    background-color: rgb(233, 225, 75);
+    }
+
+ /* change background color of even rows */
+tr:nth-child(even) {
+    background-color:#947c3c;
+
+}
+ /* add image to the list */
+.hangout li{
+    list-style-image: url(excited.gif);
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    table {
+        border:  2px solid black; 
+        background-color: #bf941e;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+        caption-side: bottom;
+    }
+
+    /* Styles for table header and table data */
+    th,td {
+        border: 1px solid ;
+        border-spacing: 1em;
+        padding: 4px;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+    
+    /* Styles for table header */
+    th {
+        font-weight: bold;
+        font-size: 14px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+   
+  }

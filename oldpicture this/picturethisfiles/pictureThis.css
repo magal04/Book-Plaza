@@ -1,0 +1,23 @@
+
+   /* 
+   Filename: PictureThis.html
+   Author: Abdou Sylla
+   Purpose: Image Muniplation
+   Modification History: 
+   26 sep 2022: Create Date
+   26 sep 2022: Added link to myFirst (JS) */
+
+   body{
+        font-family:fantasy;
+        background-color:#662814 ;
+        text-align: center;  
+    }
+    a:hover, a:active {
+        opacity:.4;
+    }
+    a:visited{
+        color: Black;
+    }
+    a:link {
+        color: black;
+    }
