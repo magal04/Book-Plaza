@@ -1,0 +1,160 @@
+<!doctype html>
+<!--
+ Filename: getinformed.html
+ Author: Abdou Sylla
+ Purpose: Greate a simple form
+ Modification History:
+Date: 15-04-2024-->
+<!-- Note: This form work in Chrome and Safari but the placeholder text is lighter in safari-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Get In Formed</title>
+    <link rel="stylesheet" href="getinformed.css">
+</head>
+
+<body>
+
+            <!-- 8)  Each field should have a name attribute so the data will be sent to the email when the user clicks the submit button. -->
+    <form action="mailto:bysyaab@gmail.com" method="post" enctype="text/plain">
+
+        <!--1)  Use the <fieldset> and <legend> tags to group related elements. -->
+<fieldset>
+    <h1>Get In Formed</h1>
+
+     <fieldset> 
+            <legend id = pi>Personal Information</legend>
+            
+            <!--2) Use at least three <input> elements that allow typing. -->
+        <div class="tableRow">
+            <label for="First_Name">First Name:</label>
+            <input type="text" id="First_Name" name="First_Name" value=""  placeholder="First  Name" required>
+        </div>
+
+        <!-- <div class="tableRow">
+
+            <label for="Mname">Middle Name:</label>
+            <input type="text" name="Mname" value="" placeholder="Middle Name">
+        </div> -->
+
+        <div class="tableRow">
+            <label for="Last_Name">Last Name: </label>
+            <input type="text" id ="Last_Name" name="Last_Name" value=""   placeholder="Last Name" required>
+        </div>
+        <div class="tableRow">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"  value="" placeholder="email@example.com">
+        </div>
+
+        <div class="tableRow">
+            <label for="Phone_Number">Phone Number: </label>
+            <input type="tel" id="Phone_Number" name="Phone_Number"  value=""  placeholder="555-555-0123" required>
+        </div>
+    </fieldset>
+
+
+    <fieldset>
+                <legend>Address</legend>
+            <div class="tableRow">
+                <label for="Address"> Address:</label>
+                <input type="text" id="Address"  name="Address" value=""  placeholder="Street Address" required> 
+            </div>
+            <div class="tableRow">
+                <label for="city">City:</label>
+                <input type="text" id="city"  name="city" value=""  placeholder="City" required> 
+            </div>
+            <div class="tableRow">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" value=""  placeholder="State" required>
+            </div>
+            <div class="tableRow">
+                <label for="zip">Zip:</label>
+                <input type="text" id="zip" name="zip" value=""  placeholder="Postal/Zip" required>
+            </div>
+    </fieldset>
+
+    <fieldset>
+            <legend>Status</legend>
+            
+            <!-- 3) Use a radio button with at least two mutually exclusive selections. -->
+        <div class="tableRow">
+            <label>Gender:</label>
+            <p>
+            <!-- <label for="radio">Choose Option:</label> -->
+            <input type="radio" id="male" name="Gender" value="Male" required>
+            <label for="male">Male</label><br>        
+            <input type="radio" id="female" name="Gender" value="Female" required>
+            <label for="female">Female</label>
+            </p><br>
+        </div>
+
+            <!-- 4) Use the <select> and <option> elements to create a menu control with at least three possible selections. -->
+                
+        <div class="tableRow">
+                <label for="EducationLevel">Education Level:</label>
+                <select name="EducationLevel" id="EducationLevel" required>
+                    <option value="">Choose</option>
+                    <option value="Less than high school diploma">Less than high school diploma</option>
+                    <option value="high school diploma">High school diploma</option>
+                    <option value="Some College, no degree">Some College, no degree</option>               
+                    <option value="Associate's degree">Associate's degree</option>
+                    <option value="Bachelor's degree">Bachelor's degree</option>
+                </select> 
+        </div>
+
+                <!-- 5) Create checkboxes with at least three possible selections. -->
+                <div class="tableRow">
+                    <label>Select days you want to work:</label>
+                    <p>
+                        <input type="checkbox" id="Sunday" name="WorkDay" value="Sunday"> 
+                            <label for="Sunday">Sunday</label><br>
+                        <input type="checkbox" id="Monday" name="WorkDay" value="Monday" >
+                            <label for="Monday">Monday</label><br>
+                            <input type="checkbox" id="Teusday" name="WorkDay" value="Teusday"> 
+                            <label for="Teusday">Teusday</label><br>
+                        <input type="checkbox"  id="Wedneday" name="WorkDay" value="Wedneday" >
+                            <label for="Wedneday">Wedneday</label><br>
+                            <input type="checkbox" id="Thursday" name="WorkDay" value="Thursday"> 
+                            <label for="Thursday">Thursday</label><br>
+                        <input type="checkbox" id="Friday" name="WorkDay" value="Friday" >
+                            <label for="Friday">Friday</label><br>
+                            <input type="checkbox" id="Saturday" name="WorkDay" value="Saturday" >
+                            <label for="Saturday">Saturday</label>
+                    </p>
+                </div>
+                    <br>
+
+                    
+
+            <!--6)  Use a <textarea> field with default text. -->
+            <div class="tableRow">
+                <label for="comments"> Question</label>
+                <textarea id="comments" name="Question" placeholder="I'm ready to take questions?"></textarea>
+            </div>
+            
+        </fieldset>
+           
+       
+
+       
+		
+        <!-- 7) Your form will have a  Submit button that sends the form data to an email. -->
+    <div class="button">
+        <input type="submit" value="Send">
+        <!-- 9)  Your form will have a functioning  button. All form fields should either clear or reset when it is clicked. -->
+        <input type="reset" value="Reset">
+    </div>
+
+</fieldset>
+    
+    
+    </form>
+
+    
+	   
+	
+</body>
+
+</html>

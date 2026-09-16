@@ -1,0 +1,120 @@
+    /* 
+    Filename: float.html
+    Author: Abdou Sylla
+    Create Date: 21 Mar 2024
+    Purpose: flaoting in jello.
+
+    Tested in Googole chrome, Safari, Microsoft edge
+    Page displayed exactly the same way in all browser except safari background color all darker in safari
+    */
+
+/* ----------------------------------[ Body ]------------------------------------ */
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
+    background: #efe5d0;
+    background: #efe5d0 url(/Floating/images/backg.jpg) repeat-x; /* backgroung color with images that will repeat horizontally */
+}
+
+/* ----------------------------------[ header ]------------------------------------ */
+#header {
+    width: 100%;   
+    text-align: center;
+    padding: 8px 0px;;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    font-size: 60px;
+    font-weight: bolder;
+    background-color:#cd853f; 
+    background-color: #b38f2d;
+
+}
+h1{
+    text-align: center;
+}
+
+/* ----------------------------------[ Table container ]------------------------------------ */
+div#tablecontainer {
+    display: table; /* displayed tablecontainer as a table */
+    border-spacing: 14px; /* border each side of the container to 14 pixels */
+    /* width: 90%; */
+    margin: 0 auto; /* top and bottom 0 margin |left and right auto so each table cell will have same width */
+    max-width: 1100px;
+} 
+div#tablerow {
+    display: table-row;  /* displayed tablerow as row */
+} 
+
+/* ----------------------------------[ main ]------------------------------------ */
+#main {
+    display: table-cell; /* displayed main as a cell */
+    background:#efe5d0 url(/Floating/images/backg.jpg) top left repeat-x ;  /* backgroung color with images that will repeat horizontally */
+    background-color: #faebd7;
+    padding: 5px; /* adding 5 px paddding to make the text more clear  */
+    border-radius: 8px;
+    vertical-align: top;
+}
+
+#main img {   /* requiremnt 7. image styled with float property */
+   float: right;  /* float the image to right side  */
+    margin-bottom: 4px; /* imagae wont touch the text or too close   */
+    border-radius: 8px;  /* just for clearity  */
+    }
+aside {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left; /* float the image to left side  */
+    font-style: italic;
+    background-color: #ddd1c0;
+  }
+
+  aside h2 {
+    text-align: center;
+  }
+
+/* ----------------------------------[ sidebar ]------------------------------------ */
+#sidebar{
+    display: table-cell; /* displayed sidebar as a cell in a row */
+    background:#efe5d0 url(/Floating/images/backg.jpg) top left repeat-x ;  /* backgroung color with images that will repeat horizontally */
+    background-color: #faebd7;
+    padding: 8px; /* adding 5 px paddding to make the text more clear  */
+    border-radius: 8px;
+    vertical-align: top; 
+}
+#sidebar img {
+    float: right; /* float the image to right side  */
+    margin-bottom: 4px; /* imagae wont touch the text or too close   */
+    border-radius: 8px; /* just for clearity  */
+
+}
+#summary h2 {
+    text-align: center;
+}
+/* ----------------------------------[ footer ]------------------------------------ */
+#footer { 
+    width: 100%;   
+    margin-bottom: 4px;
+    border-radius: 8px;
+	background-color: #b38f2d;
+    color: white;
+    text-align: center;
+    padding: 8px 0px;
+    font-size: small;
+    line-height: 1.6em
+}
+footer li {
+    list-style: none;  /* get ride of the bullet when using unorder list */
+}
+
+/* ----------------------------------[ Links ]------------------------------------ */
+a:link {
+    color: white;
+}
+a:hover {
+    color: black;
+	background-color: #b38f2d;
+}
+a:visited {
+    color: white;
+}
+
